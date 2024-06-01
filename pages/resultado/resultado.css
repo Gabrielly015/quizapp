@@ -156,13 +156,15 @@ main button:hover {
     cursor: pointer;
 }
 
+
 @media(min-width: 1160px) {
     body {
         background: var(--bg-desktop) var(--bg-color);
         background-size: cover;
         background-repeat: no-repeat;
     }
-
+     
+    
     header {
         margin-block: 81px;
         max-width: 1160px;
@@ -197,4 +199,19 @@ main button:hover {
         height: 20px;
     }
 
+    main {
+        display: flex;
+        gap: 140px;
+        max-width: 1160px;
+        margin-inline: auto;
+    }
+
+    main h2,
+    main > div {
+        width: 100%;
+    }
+
+    main h2 {
+        font-size: 64px;
+    }
 }
